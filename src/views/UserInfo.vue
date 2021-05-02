@@ -26,8 +26,8 @@ import { defineAsyncComponent, defineComponent, shallowRef } from 'vue'
 
 export default defineComponent({
   setup() {
-    const UserProfile = defineAsyncComponent(() => import('@/components/UserProfile.vue'))
-    const UserColumn = defineAsyncComponent(() => import('@/components/UserColumn.vue'))
+    const UserProfile = defineAsyncComponent(() => import('@/components/dynamic/UserProfile.vue'))
+    const UserColumn = defineAsyncComponent(() => import('@/components/dynamic/UserColumn.vue'))
     const tabs = [
       {id: formatDateId(), name: '用户信息', component: UserProfile},
       {id: formatDateId(), name: '我的专栏', component: UserColumn}

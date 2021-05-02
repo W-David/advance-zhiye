@@ -60,7 +60,7 @@
 import { ColumnProps, GlobalStateData, ResponseDataType } from '@/store/index'
 import { computed, defineComponent, onMounted, ref } from 'vue'
 import { ImageProps, UploadColumn } from '@/store/index'
-import Uploader from '@/components/Uploader.vue'
+import Uploader from '@/components/widgets/Uploader.vue'
 import ValidateInput, { RulesProps }  from '@/components/widgets/ValidateInput.vue'
 import ValidateForm  from '@/components/widgets/ValidateForm.vue'
 import createMessage from '@/utils/createMessage'
