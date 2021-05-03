@@ -7,7 +7,7 @@
                 position-relative
                 row"
          v-for="post in posts" 
-         :class="{'shadow': hoverIndex === post._id, 'shadow-sm': hoverIndex !== post._id}"
+         :class="[ hoverIndex === post._id ? 'shadow' : 'shadow-sm']"
          :key="post._id"
          @mouseenter="hoverIndex = post._id"
          @mouseleave="hoverIndex = ''">

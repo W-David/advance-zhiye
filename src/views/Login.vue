@@ -51,7 +51,6 @@ export default defineComponent({
     const userPasswdRef = ref('')
     const passwdLenValidator = () => userPasswdRef.value.length >= 6 && userPasswdRef.value.length <= 16
     const user = computed(() => store.state.user)
-    let timer = 0
     const emailRules: RulesProps = [
       {type: 'notEmpty', message: '邮箱不能为空'},
       {type: 'email', message: '邮箱格式错误'}

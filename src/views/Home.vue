@@ -1,7 +1,7 @@
 <template>
   <div class="w-75 mx-auto">
     <column-list :columns="columns"></column-list>
-    <load-more text="更多专栏" :isShow="!isEndPage" @on-load-more="onLoadMore"></load-more>
+    <load-more text="更多专栏" noMore="已经到底了欧" :isShow="!isEndPage" @on-load-more="onLoadMore"></load-more>
   </div>
 </template>
 

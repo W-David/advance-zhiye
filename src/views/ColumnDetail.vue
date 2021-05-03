@@ -12,12 +12,12 @@
     <post-list v-if="posts"
                :posts="posts">
     </post-list>
-    <load-more text="更多文章" :isShow="!isEndPage"  @on-load-more="onLoadMore"></load-more>
+    <load-more text="更多文章" noMore="俺也是有底线的" :isShow="!isEndPage"  @on-load-more="onLoadMore"></load-more>
   </div>
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, onMounted, watch, watchEffect } from 'vue'
+import { computed, defineComponent, onMounted, watch } from 'vue'
 import { useStore } from 'vuex'
 import { useRoute } from 'vue-router'
 import { ColumnProps, GlobalStateData, PostsProps } from '@/store/index'

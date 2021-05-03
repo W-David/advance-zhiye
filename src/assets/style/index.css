@@ -4,3 +4,12 @@ html, body, #app {
   width: 100% !important;
   height: 100% !important;
 }
+
+button {
+  outline: none !important;
+  border: none !important;
+}
+
+footer, header, hgroup, nav, main, article, aside, details, menu, section, figure, figcaption {
+  display: block;
+}

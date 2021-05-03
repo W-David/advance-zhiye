@@ -46,6 +46,7 @@ import DropDownItem from '@/components/widgets/DropDownItem.vue'
 import { GlobalStateData, UserProps } from '@/store/index'
 import { useStore } from 'vuex'
 import createMessage from '@/utils/createMessage'
+import { useRouter } from 'vue-router'
 
 export default defineComponent({
   name: 'globalHeader',
@@ -61,8 +62,10 @@ export default defineComponent({
   },
   setup () {
     const store = useStore<GlobalStateData>()
+    const router = useRouter()
     const logout = () => {
       store.commit('logout')
+      router.push('/login') 
       createMessage('info', '已退出,请重新登录...', 1200)
     }
     return {
