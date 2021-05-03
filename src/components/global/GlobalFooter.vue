@@ -26,18 +26,13 @@ export default defineComponent({
     const links: LinksProps = [
       {
         id: formatDateId(), 
-        url: '#',
+        url: 'https://github.com/W-David/advance-zhiye',
         name: '项目地址'
       },
       {
         id: formatDateId(),
-        url: '#',
-        name: '关于我'
-      },
-      {
-        id: formatDateId(),
-        url: '#',
-        name: '博客'
+        url: 'http://coody.xyz',
+        name: '我的博客'
       }
     ]
     return {
